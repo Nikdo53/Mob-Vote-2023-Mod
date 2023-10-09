@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="Unlicense"
+# issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/"
+[[mods]]
+modId="mobvote2023mod"
+version="${file.jarVersion}"
+displayName="Mob Vote 2023 Mod"
+# logoFile="mobvote2023mod.png"
+authors="Nikdo53"
+displayTest="MATCH_VERSION"
+description='''Lorem Ipsum'''
+
+[[dependencies.mobvote2023mod]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47.2.1,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.mobvote2023mod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
