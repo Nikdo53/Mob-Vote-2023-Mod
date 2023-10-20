@@ -22,13 +22,12 @@ public class PenguinEntity extends Animal {
     protected void registerGoals() {
         this.goalSelector.addGoal(0, new FloatGoal(this));
         this.goalSelector.addGoal(1, new LookAtPlayerGoal(this, Player.class, 3f));
-        this.goalSelector.addGoal(2, new RandomStrollGoal(this, ));
+        this.goalSelector.addGoal(2, new RandomStrollGoal(this,0));
     }
     public static AttributeSupplier.Builder createAttributes() {
         return Animal.createLivingAttributes()
                 .add(Attributes.MAX_HEALTH, 15)
-                .add(Attributes.MOVEMENT_SPEED, 0.01f)
-                .add(Attributes.KNOCKBACK_RESISTANCE, 0.5f)
+                .add(Attributes.MOVEMENT_SPEED, 0.5f)
                 .add(Attributes.ATTACK_DAMAGE, 1f)
                 .add(Attributes.FOLLOW_RANGE, 5f)
                 .add(Attributes.ATTACK_KNOCKBACK, 0.5f);

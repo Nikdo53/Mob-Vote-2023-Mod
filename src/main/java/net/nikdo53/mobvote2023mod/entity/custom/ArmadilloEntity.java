@@ -22,7 +22,7 @@ public class ArmadilloEntity extends Animal {
     protected void registerGoals() {
         this.goalSelector.addGoal(0, new FloatGoal(this));
         this.goalSelector.addGoal(1, new LookAtPlayerGoal(this, Player.class, 3f));
-        this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
+        this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0));
     }
     public static AttributeSupplier.Builder createAttributes() {
         return Animal.createLivingAttributes()

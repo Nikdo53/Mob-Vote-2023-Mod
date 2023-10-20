@@ -17,15 +17,15 @@ public class ModEntities {
 
     public static final RegistryObject<EntityType<ArmadilloEntity>> ARMADILLO =
           ENTITY_TYPES.register("armadillo", () -> EntityType.Builder.of(ArmadilloEntity::new, MobCategory.CREATURE)
-                  .sized(1.1f, 0.8f).build("armadillo"));
+                  .sized(0.7f, 0.7f).build("armadillo"));
 
     public static final RegistryObject<EntityType<CrabEntity>> CRAB =
             ENTITY_TYPES.register("crab", () -> EntityType.Builder.of(CrabEntity::new, MobCategory.CREATURE)
-                    .sized(1.1f, 0.8f).build("crab"));
+                    .sized(0.5f, 0.4f).build("crab"));
 
     public static final RegistryObject<EntityType<PenguinEntity>> PENGUIN =
             ENTITY_TYPES.register("penguin", () -> EntityType.Builder.of(PenguinEntity::new, MobCategory.CREATURE)
-                    .sized(1.1f, 0.8f).build("penguin"));
+                    .sized(0.4f, 1.0f).build("penguin"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
